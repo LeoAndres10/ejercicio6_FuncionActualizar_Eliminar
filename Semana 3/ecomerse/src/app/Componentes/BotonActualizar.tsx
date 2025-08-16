@@ -48,7 +48,7 @@ const [imgProducto,setImgProducto]= useState<string>('');
                 <div className='card-body'>
      
       <input name="idProducto" value={idProducto} onChange={(e)=>setIdProducto} />
-      <input name="nombre Producto" value={nombreProducto} onChange={(e)=>setNombreProducto} />
+      <input name="nombre Producto" value={nombreProducto} onChange={(e)=>setNombreProducto(e.target.value)} />
       <input name="Precio Producto" value={precioProducto} onChange={(e)=>setPrecioProducto} />
       <input name="ISV Producto" value={isvProducto} onChange={(e)=>setIsvProducto} />
       <input name="IMG Producto" value={imgProducto} onChange={(e)=>setImgProducto} />

@@ -47,7 +47,9 @@ export default function ProviderProducto({children}:PlantillaNode) {
 
   setProducto((productoAnterior)=>
     productoAnterior.map((u)=>(u.idProducto===id ? productos : u))
+  
 );
+ alert("Producto actualizado correctamente")
 return productos;
 
        } catch (error) {
@@ -74,7 +76,7 @@ async function eliminarProducto(id:number){
   const {productos} = await respuesta.json();
 
   
-
+ alert("Producto eliminado correctamente")
 return productos;
 
        } catch (error) {

@@ -16,7 +16,7 @@ export default function page() {
                     carritoProducto.map((item) => (
                         <div className='col-md-4'>
                                 <CardComponent {...item} key={item.idProducto}></CardComponent>
-                                <BotonEliminar></BotonEliminar>
+                                <BotonEliminar {...item}></BotonEliminar>
                         </div>
                         
                     ))
